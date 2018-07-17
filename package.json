@@ -9,7 +9,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "async-node src/index.js"
+    "start": "async-node src/index.js",
+    "deploy": "git push heroku master"
   },
   "engines": {
     "node": "6.3.1"

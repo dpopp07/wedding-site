@@ -577,7 +577,7 @@ section .header:before {
     flex: 1;
     margin-right: 30px;
   }
-  /* override his shit */
+  /* override his stuff */
   .columns.party-container > div {
     flex: unset;
     margin-right: 0;

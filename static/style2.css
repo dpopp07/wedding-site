@@ -175,14 +175,18 @@ nav a:hover {
 .columns.party-container {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  margin: 10px;
+  /* change this to whatever # cuts off the longest name */
+  width: 1115px;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .bridesmaid, .groomsmen {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 0 -10px;
+  width: 50%;
 }
 
 .party-description, .party-pic {
@@ -197,6 +201,8 @@ nav a:hover {
 
 .party-pic img {
   max-width: 100%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 .party-description {
@@ -256,11 +262,15 @@ nav a:hover {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1115px) {
   .columns.party-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: unset;
+  }
+  .bridesmaid, .groomsmen {
+    width: unset !important;
   }
   .bridesmaid {
     flex-direction: column;
@@ -269,15 +279,26 @@ nav a:hover {
   .groomsmen {
     flex-direction: column-reverse;
     align-items: flex-end;
+    margin-right: unset !important;
   }
   .party-description {
     padding-bottom: 8px;
+    margin: 0;
   }
   .party-pic {
     padding-bottom: 15px;
+    margin: 0;
   }
   .party-description h4 {
     margin-bottom: .5em !important;
+  }
+  .bridesmaid .party-description p {
+    /* override his letter spacing offset */
+    margin-left: -2px;
+  }
+  .groomsmen .party-description p {
+    /* override his letter spacing offset */
+    margin-right: -2px;
   }
 }
 
@@ -341,6 +362,9 @@ section .header:before {
     width: 960px;
     margin: 0 auto;
     padding: 2em 0 1em;
+  }
+  #bridal-party .content {
+    width: unset;
   }
 }
 

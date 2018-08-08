@@ -613,13 +613,13 @@ section .header:before {
     margin-right: 0;
   }
 
-  #lodging > .content {
+  /* #lodging > .content {
     padding-top: 210px;
-  }
+  }*/
 
-  #gifts > .content {
+  /* #gifts > .content {
     padding-top: 250px;
-  }
+  }*/
 
   .wrap-photogrid {
     left: -20px;

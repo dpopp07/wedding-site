@@ -63,12 +63,12 @@ body.rsvp {
   align-items: center;
   bottom: 0;
   display: flex;
-  justify-content: left;
-  left: 5%;
+  justify-content: right;
+  left: 0;
 /*  justify-content: center;
   left: 0;*/
   position: absolute;
-  right: 0;
+  right: 8%;
   top: 0;
   color: #465d55;
 }

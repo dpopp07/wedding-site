@@ -64,11 +64,10 @@ body.rsvp {
   bottom: 0;
   display: flex;
   justify-content: right;
-  left: 0;
 /*  justify-content: center;
   left: 0;*/
   position: absolute;
-  right: 8%;
+  right: 15%;
   top: 0;
   color: #465d55;
 }
